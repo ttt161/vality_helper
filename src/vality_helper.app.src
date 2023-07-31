@@ -1,0 +1,16 @@
+{application, vality_helper,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {vality_helper_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    gun
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache-2.0"]},
+  {links, []}
+ ]}.

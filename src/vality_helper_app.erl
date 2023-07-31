@@ -1,0 +1,18 @@
+%%%-------------------------------------------------------------------
+%% @doc vality_helper public API
+%% @end
+%%%-------------------------------------------------------------------
+
+-module(vality_helper_app).
+
+-behaviour(application).
+
+-export([start/2, stop/1]).
+
+start(_StartType, _StartArgs) ->
+    vality_helper_sup:start_link().
+
+stop(_State) ->
+    ok.
+
+%% internal functions
